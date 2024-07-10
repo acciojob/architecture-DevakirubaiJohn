@@ -1,1 +1,9 @@
 /*  your css code here. If applicable */
+table td:first-child,
+table td:last-child {
+  width: 200px;
+}
+
+table td:nth-child(2) {
+  width: 600px;
+}

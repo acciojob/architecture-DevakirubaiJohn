@@ -48,7 +48,7 @@ border-collapse: collapse;
 </tr>
 <tr>
 <td>2</td>
-<td>Image</td>
+<td><img src="your-image-path" alt="some text"></td>
 <td>Text Content</td>
 <td>Image</td>
 </tr>
@@ -62,49 +62,9 @@ border-collapse: collapse;
 </ol>
 <h2>Styling</h2>
 <p>Additional styling may be applied to enhance the visual appearance of the webpage. Please refer to the provided CSS file for styling details.</p>
-<p>Follow the above guidelines to create an HTML webpage that provides architectural information. Ensure that all required elements are included and appropriately styled.</p>
-<!–/// <reference types=“cypress” />
-// Welcome to Cypress!
-//
-// This spec file contains a variety of sample tests
-// for a todo list app that are designed to demonstrate
-// the power of writing tests in Cypress.
-//
-// To learn more about how Cypress works and
-// what makes it such an awesome testing tool,
-// please read our getting started guide:
-// https://on.cypress.io/introduction-to-cypress
-const baseUrl = “http://localhost:3000”;
-describe(“Testcase1 : check for div with class imageContainer”, () => {
-beforeEach(() => {
-cy.visit(baseUrl);
-})
-// test cases u have to change is these all ‘it’ below
-it(‘contains table 1’, () => {
-cy.visit(baseUrl + “/main.html”);
-cy.get(‘.imageContainer img’).should(‘be.visible’);
-});
-});
-describe(‘Check table columns’, () => {
-it(‘Has three columns’, () => {
-cy.visit(baseUrl + “/main.html”);
-cy.get(‘table’)
-.find(‘tr’)
-.then((rows) => {
-const firstRow = rows[0];
-const cells = firstRow.getElementsByTagName(‘td’);
-expect(cells).to.have.lengthOf(3);
-});
-});
-it(‘first and last columns have images’, () => {
-cy.visit(baseUrl + “/main.html”);
-cy.get(‘table tr td:first-child img’)
-.should(‘exist’);
-cy.get(‘table tr td:nth-child(2) img’)
-.should(‘not.exist’);
-cy.get(‘table tr td:last-child img’)
-.should(‘exist’);
-});
-});–>
+<p>Follow the a</p>
+	<div class="imageContainer">
+  <img src="your-image-path" alt="some text">
+</div>
 </body>
 </html>
